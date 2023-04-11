@@ -1,0 +1,89 @@
+body {
+    margin-bottom: 20%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.part_one {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    align-content: center;
+    padding-right: 10%;
+    padding-bottom: 5%
+}
+
+#main_title {
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.shift {
+    width:100px;
+    height: 15px;
+    margin-left: 10px;
+
+}
+
+.calcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    padding-right: 5%;
+    margin-left: 0;
+    text-align: right;
+}
+
+.audio_check {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    vertical-align: top;
+}
+
+.center-audio {
+    align-items: center;
+    text-align: center;
+}
+
+.yes-no {
+    width: 20px;
+}
+
+#audio-header {
+    margin: 0;
+    padding-left:5%
+}
+
+.ac_check {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 20px;
+    padding-top: 5%;
+    /* justify-content: left; */
+    align-content: center;
+}
+
+.ac_label {
+    margin-right: 5%;
+}
+
+.ac_title {
+    margin-right: 10%;
+}
+
+.ac_sub {
+    padding-left: 5%;
+}
+
+.server_container {
+    display: grid;
+    grid-template-columns: auto auto ;
+}
+
+#server_title {
+    font-size: x-large;
+    text-align: center;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%
+}

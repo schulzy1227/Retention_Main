@@ -1,20 +1,196 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>My Form</title>
-</head>
-<body>
-	<form method="post" action="submit.php">
-		<label for="name">Name:</label>
-		<input type="text" id="name" name="name" required>
 
-		<label for="email">Email:</label>
-		<input type="email" id="email" name="email" required>
+    <head>
+        <title>Camera Check</title>
 
-		<label for="message">Message:</label>
-		<textarea id="message" name="message" rows="5" required></textarea>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
 
-		<button type="submit">Submit</button>
-	</form>
-</body>
+    <body>
+        <h1 id="main_title">Daily Server Retention and Camera Check</h1>
+        <form method="post" action="submit.php">
+            <div class="part_one">
+                <div class="col calcontainer">
+                    <label for="shift">Shift:</label>
+                    <input type="text" class="shift" required>
+                    <label for="shift">Employee Name:</label>
+                    <input type="text" class="shift" required>
+                    <label for="shift">Employee ID Number:</label>
+                    <input type="text" class="shift" required>
+                    <label for="shift">Logged in as Supervisor:</label>
+                    <input type="text" class="shift yes-no" name="shift" placeholder="Y/N" required>
+                </div>
+                <div class="col">
+                    <label for="notifications">Active Notifications?:</label>
+                    <input class="yes-no" placeholder="Y/N" required>
+                    <br>
+                    <label for="message">Have the issues been resolved?:</label>
+                    <input class="yes-no" placeholder="Y/N" required>
+                    <p class="col">
+                        If there errors have not been resolved and there IS NOT a work order already on the board
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            fill one out. If all errors have been checked and work orders are completed
+                        <b>CLEAR NOTIFICATIONS</b>
+                    </p>
+                </div>
+
+
+            </div>
+            <div class="audio_check">
+                <div class="col">
+                    <h3 id="audio-header">Audio Check:</h3>
+                </div>
+                <div class="col center-audio">
+                    <h5 id="audio-header" class="col">Camera 21:</h5>
+                    <input class="yes-no" name="message" required>
+                </div>
+                <div class="col center-audio">
+                    <h5 id="audio-header" class="col">Camera 27:</h5>
+                    <input class="yes-no" name="message" required>
+                </div>
+                <div class="col center-audio">
+                    <h5 id="audio-header" class="col">Camera 28:</h5>
+                    <input class="yes-no" name="message" required>
+                </div>
+                <div class="col center-audio">
+                    <h5 id="audio-header" class="col">Camera 132:</h5>
+                    <input class="yes-no" name="message" required>
+                </div>
+                <div class="col center-audio">
+                    <h5 id="audio-header" class="col">Camera 2170:</h5>
+                    <input class="yes-no" name="message" required>
+                </div>
+                <div class="col center-audio">
+                    <h5 id="audio-header" class="col">Camera 3020:</h5>
+                    <input class="yes-no" name="message" required>
+                </div>
+            </div>
+            <br>
+
+            <div class="ac_check">
+                <div class="col ac_title">Air Conditioning Check:</div>
+                <label class="col ac_label">AC 1 (Carrier):
+                    <input style="width:25px" required>
+                </label>
+                <label class="col ac_label" style="justify-content: left;">AC 2 (Big Red):
+                    <input style="width:25px" required>
+                </label>
+            </div>
+
+            <div class="row" id="server_title">Server Retention</div>
+            <div class="server_container">
+                <div class="col">
+                    <label class="col ac_label" style="justify-items: right;">IV - 01:</label>    
+                </div>
+                <div class="col">
+                    <input style="width:25px" required> Days
+                </div>
+            </div>
+            <div class="server_container">
+                <div class="col">
+                    <label class="col ac_label" style="justify-items: right;">IV - 02:</label>    
+                </div>
+                <div class="col">
+                    <input style="width:25px" required> Days
+                </div>
+            </div>
+            <div class="server_container">
+                <div class="col">
+                    <label class="col ac_label" style="justify-items: right;">IV - 03:</label>    
+                </div>
+                <div class="col">
+                    <input style="width:25px" required> Days
+                </div>
+            </div>
+            <div class="server_container">
+                <div class="col">
+                    <label class="col ac_label" style="justify-items: right;">IV - 04:</label>    
+                </div>
+                <div class="col">
+                    <input style="width:25px" required> Days
+                </div>
+            </div>
+            <div class="server_container">
+                <div class="col">
+                    <label class="col ac_label" style="justify-items: right;">IV - 05:</label>    
+                </div>
+                <div class="col">
+                    <input style="width:25px" required> Days
+                </div>
+            </div>
+            <div class="server_container">
+                <div class="col">
+                    <label class="col ac_label" style="justify-items: right;">IV - 06:</label>    
+                </div>
+                <div class="col">
+                    <input style="width:25px" required> Days
+                </div>
+            </div>
+            <div class="server_container">
+                <div class="col">
+                    <label class="col ac_label" style="justify-items: right;">IV - 07:</label>    
+                </div>
+                <div class="col">
+                    <input style="width:25px" required> Days
+                </div>
+            </div>
+            <div class="server_container">
+                <div class="col">
+                    <label class="col ac_label" style="justify-items: right;">IV - 08:</label>    
+                </div>
+                <div class="col">
+                    <input style="width:25px" required> Days
+                </div>
+            </div>
+            <div class="server_container">
+                <div class="col">
+                    <label class="col ac_label" style="justify-items: right;">IV - 09:</label>    
+                </div>
+                <div class="col">
+                    <input style="width:25px" required> Days
+                </div>
+            </div>
+            <div class="server_container">
+                <div class="col">
+                    <label class="col ac_label" style="justify-items: right;">IV - 10:</label>    
+                </div>
+                <div class="col">
+                    <input style="width:25px" required> Days
+                </div>
+            </div>
+            <div class="server_container">
+                <div class="col">
+                    <label class="col ac_label" style="justify-items: right;">IV - 11:</label>    
+                </div>
+                <div class="col">
+                    <input style="width:25px" required> Days
+                </div>
+            </div>
+            <div class="server_container">
+                <div class="col">
+                    <label class="col ac_label" style="justify-items: right;">IV - 12:</label>    
+                </div>
+                <div class="col">
+                    <input style="width:25px" required> Days
+                </div>
+            </div>
+            <div class="server_container">
+                <div class="col">
+                    <label class="col ac_label" style="justify-items: right;">   NSM-1:</label>    
+                </div>
+                <div class="col">
+                    <input style="width:25px" required> Days
+                </div>
+            </div>
+            <div class="server_container">
+                <div class="col">
+                    <label class="col ac_label" style="justify-items: right;">NSM-5:</label>    
+                </div>
+                <div class="col">
+                    <input style="width:25px" required> Days
+                </div>
+            </div>
+
+        </form>
+    </body>
 </html>
